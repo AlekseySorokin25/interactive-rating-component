@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 1px);
+    background-color: var(--very-dark-blue);
+}
+
+.container {
+    max-width: 410px;
+    background-color: var(--dark-blue);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.ratingState > * {
+    margin-bottom: 30px;
+}
+
+.ratingState img {
+    background-color: hsla(216, 12%, 54%, 0.15);
+    border-radius: 100%;
+    padding: 12px;
+}
+
+.ratingState h1 {
+    color: var(--white);
+    font-size: 24px;
+}
+
+.ratingState p {
+    color: var(--light-grey);
+}
+
+.ratingState .ratingSubmit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingState .ratingSubmit span {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+    padding-top: 2px;
+    color: var(--medium-grey);
+    background-color: hsla(216, 12%, 54%, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratingState .ratingSubmit span:hover {
+    color: var(--white);
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.ratingState .submit_btn {
+    width: 100%;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 0px;
+    color: var(--white);
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+.ratingState  .submit_btn:hover {
+    background-color: var(--white);   
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.thankYouState {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thankYouState > * {
+    margin-bottom: 15px;
+}
+
+.thankYouState .youSelected {
+    background-color: hsla(216, 12%, 54%, 0.15);
+    border-radius: 15px;
+    padding: 3px 13px 1px;
+
+    color: hsla(25, 97%, 53%, 0.7);
+}
+
+.thankYouState h2 {
+    font-size: 24px;
+    color: var(--white);
+}
+
+.thankYouState .gratitude {
+    color: var(--light-grey);
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.checked {
+    background-color: var(--orange) !important;
+    color: var(--white) !important;
+}
